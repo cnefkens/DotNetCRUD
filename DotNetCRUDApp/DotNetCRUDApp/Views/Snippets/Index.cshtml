@@ -1,0 +1,115 @@
+@model IEnumerable<DotNetCRUDApp.Models.Snippets>
+
+@{
+    ViewData["Title"] = "View Snippets";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+
+<body>
+
+
+    <div class="container snippet-container">
+        <div class="row">
+            <div class="col-md-6">
+                <p><br /></p>
+                <div class="btn btn-success"><a asp-action="Create" style="color: white">Create Snippet</a></div>
+                <p><br /></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading"><h4><strong>Filter Snippets</strong></h4></div>
+                    <div class="panel-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="form-input-group">
+                                        <div class="col-sm-2">
+                                            <label for="LanguageSearch">Language:</label>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="LanguageSearch" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row"><p></p></div>
+                                <div class="row">
+                                    <div class="form-input_group">
+                                        <div class="col-sm-2">
+                                            <label for="SnippetSearch">Snippet:</label>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="SnippetSearch" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p><br /></p>
+                                    <div class="col-sm-2">
+                                        <button class="btn btn-primary" type="submit" value="Filter">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <p><br /></p>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table table-responsive">
+            <thead class="thead-default">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.snippet)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.language)
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.snippet)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.language)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

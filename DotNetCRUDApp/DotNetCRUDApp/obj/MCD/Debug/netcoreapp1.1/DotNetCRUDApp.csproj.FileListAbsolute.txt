@@ -1,0 +1,9 @@
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.deps.json
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.runtimeconfig.json
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.runtimeconfig.dev.json
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.dll
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.pdb
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\MCD\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.AssemblyInfo.cs
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.dll
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\MCD\Debug\netcoreapp1.1\DotNetCRUDApp.pdb

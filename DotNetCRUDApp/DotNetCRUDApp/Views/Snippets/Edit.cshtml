@@ -1,0 +1,92 @@
+@model DotNetCRUDApp.Models.Snippets
+
+@{
+ 
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div class="container edit-snippet-container">
+        <div class="row">
+            <p><br /></p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><strong>Edit Snippet</strong></h4>
+                    </div>
+                    <div class="panel-body">
+                        <form asp-action="Edit">
+                            <div class="row">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" asp-for="Id" />
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                     <label asp-for="title" class="col-md-2">Title:</label>
+                                    <div class="col-md-10">
+                                        <input asp-for="title" class="form-control" />
+                                        <span asp-validation-for="title" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label asp-for="description" class="col-md-2">Description:</label>
+                                    <div class="col-md-10">
+                                        <input asp-for="description" class="form-control" />
+                                        <span asp-validation-for="description" class="text-danger"></span>
+                                    </div>
+                                </div>
+                              </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label asp-for="snippet" class="col-md-2">Snippet:</label>
+                                        <div class="col-md-10">
+                                            <input asp-for="snippet" class="form-control" />
+                                            <span asp-validation-for="snippet" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label asp-for="language" class="col-md-2">Language:</label>
+                                    <div class="col-md-10">
+                                        <input asp-for="language" class="form-control" />
+                                        <span asp-validation-for="language" class="text-danger"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-offset-2 col-md-10">
+                                        <button type="submit" value="Save" class="btn btn-primary">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+
+</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="btn btn-primary">
+                    <a asp-controller="Snippets" asp-action="Index" style="color: white">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

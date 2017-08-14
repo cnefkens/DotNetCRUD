@@ -1,0 +1,10 @@
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\Debug\netcoreapp1.1\DotNetCRUDApp.deps.json
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\Debug\netcoreapp1.1\DotNetCRUDApp.runtimeconfig.json
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\Debug\netcoreapp1.1\DotNetCRUDApp.runtimeconfig.dev.json
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\Debug\netcoreapp1.1\DotNetCRUDApp.dll
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\bin\Debug\netcoreapp1.1\DotNetCRUDApp.pdb
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\Debug\netcoreapp1.1\DotNetCRUDApp.csprojResolveAssemblyReference.cache
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\Debug\netcoreapp1.1\UserSecretsAssemblyInfo.cs
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\Debug\netcoreapp1.1\DotNetCRUDApp.AssemblyInfo.cs
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\Debug\netcoreapp1.1\DotNetCRUDApp.dll
+C:\Users\NefkensC\DotNetCRUD\DotNetCRUDApp\DotNetCRUDApp\obj\Debug\netcoreapp1.1\DotNetCRUDApp.pdb

@@ -1,0 +1,74 @@
+@model DotNetCRUDApp.Models.Snippets
+
+@{
+   
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+<div class="container delete-snippet-container">
+    <div class="row">
+        <h3>Are you sure you want to delete this?</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Delete Snippet</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <dl class="dl-horizontal">
+                                <input type="hidden" asp-for="Id" />
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.title):
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.title)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.description):
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.description)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.snippet):
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.snippet)
+                                </dd>
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.language):
+                                </dt>
+                                <dd>
+                                    @Html.DisplayFor(model => model.language)
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <form asp-action="Delete">
+                            <div class="form-actions no-color">
+                                <button type="submit" value="Delete" class="btn btn-danger">Delete</button>
+                                <div class="btn btn-primary"><a asp-action="Index" style="color: white">Back to List</a></div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@model DotNetCRUDApp.Models.Snippets
+
+@{
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div class="container details-snippet-container">
+    <div class="row">
+        <p><br /></p>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><strong>Snippet Details</strong></h4>
+                </div>
+                <div class="panel-body">
+                    <dl>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.title):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.title)
+                        </dd>
+                        <dd><br /></dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.description):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.description)
+                        </dd>
+                        <dd><br /></dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.snippet):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.snippet)
+                        </dd>
+                        <dd><br /></dd>
+                        <dt>
+                            @Html.DisplayNameFor(model => model.language):
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.language)
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="btn btn-success">
+            <a asp-action="Edit" asp-route-id="@Model.Id" style="color: white">Edit</a>
+        </div>
+        <div class="btn btn-primary">
+            <a asp-action="Index" style="color: white">Back to List</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
